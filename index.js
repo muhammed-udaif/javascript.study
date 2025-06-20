@@ -1411,21 +1411,17 @@ let number = [3,5,7,1,11,8,2,9];
 //   bike(){
 //     console.log("duke");
     
-//   }hondaCity = {
-//   model : "sedan",
-//   manufacturer: "honda",
-//   variant: "Automatic",
-//   color: "Black",
-//   brakeSystem: "ABS",hondaCity = {
+//   hondaCity = {
 //   model : "sedan",
 //   manufacturer: "honda",
 //   variant: "Automatic",
 //   color: "Black",
 //   brakeSystem: "ABS",
+//   brakeSystem: "ABS",
 //   printColor : function(){
 //     console.log("color : red");
 //   }
-// };
+// }
 // x5 = {
 //   model: "sedan",
 //   manufacturer:"honda",
@@ -1544,7 +1540,274 @@ let number = [3,5,7,1,11,8,2,9];
 // const obj = new A();
 // obj.methodA();
 // obj.methodA(3);
-// ]]]]]]]]]]]]]]]
+// Abstraction   : it is  to practice of hiding the implementing details of the object and exposing only the essential to the user
+// encapsulation : process of binding properties and methods into single unit is called encapsulation. eg : class
+// spread operator
+
+// const  arr1 =[1,2,3,4]
+// const arr2 = [...arr1,5,6]
+// console.log(arr2);
+// const a1 = [1,2,3]
+// const a2 = [4,5,6]
+// const a3 = [...a1,...a2]
+// console.log(a3);
+// const obj1 ={
+//     a:1,
+//     b:2
+// }
+// const obj2 = {
+//     c:"x",
+//     d:"y"
+// }
+// const obj3 ={
+//     ...obj1,
+//     ...obj2
+// }
+// console.log(obj3);
+// rest operator 
+// function sum (a,b){
+//     return a+b;
+// }
+// console.log(sum(5,7));
+// function sumNew(...n){
+//     sum = 0;
+//     for(let item of n){
+//         sum = sum + item;
+//     }
+//     return sum;
+// }
+// console.log(sumNew(3,4,7,8,1,9));]]]]]]]
+// var weatherData = [
+//      {district:"Thrissur",temperature:32},
+//      {district:"Kottayam", temperature:29},
+//      {district:"palakkad",temperature:34},
+//      {district:"Ernakulam", temperature:33},
+//      {district:"Thrissur", temperature:29},
+//      {district:"Kottayam", temperature:30},
+//      {district:"palakkad",temperature:37},
+//      {district:"Ernakulam", temperature:30}
+// ]
+// let wd ={}
+// for(let item of weatherData){
+//   dist = item.district
+//   currentTemp = item.temperature;
+//   if(dist in wd){ 
+//     // oldTemp = wd[dist];
+//     if(currentTemp > wd[dist]){
+//        wd[dist] = currentTemp;   //assing the values to the key
+//     }
+//   }else{
+//     wd[dist] = currentTemp   // for assing values into the key 
+//   }
+//    oldTemp = wd[dist];
+// }
+// console.log(wd);
+// Exception handling 
+// var exp = "10+*5"
+// var result = eval(exp)
+// console.log(result)
+// try{
+//    var result = eval(exp)
+//    console.log(result)
+// }
+// catch{
+//     console.log("Expression is invalid")
+// }
+// finally{
+//     console.log("execution is completed");
+// array destructuring and object destructuring
+// var fruits = ["apple","orange","banana","kiwi"]
+// var [a,b,c,d] = fruits;
+// console.log(d);
+// var [x,,,y] = fruits
+// console.log(x);
+// console.log(y);]
+// var num = [1,2,3,4,5,6,7]
+// var [ num1, ...num2] = num;
+// console.log(num1);
+// console.log(num2);aaaaaaaaaaa
+// var [num1,,,,...num2] = num;
+// console.log(num1);
+// console.log(num2);
+// object destructuring
+// var obj = {
+//     name:"john",
+//     location:"kakkanad",
+//     mobNo:1234567
+// }
+//  var {name,location,mobNo} = obj;
+// console.log(obj);
+// console.log(name);
+// console.log(location);
+// console.log(mobNo);
+// document object model ]]]
+// var x = document.getElementsByTagName("h1")
+// console.log(x);
+// var arr = Array.from(x)
+// console.log(arr);
+// arr[0].style.color = "red";
+// var  x =document.getElementsByTagName("h3")
+// console.log(x);
+// var arr = Array.from(x)
+// console.log(arr);
+// arr[0].style.backgroundColor = "yellow"
+// var x = document.getElementById("heading1")
+// x.textContent = "Hi Udaif"
+// var x = document.getElementsByClassName("Heading1")
+// console.log(x);
+// var arr = Array.from(x)
+// console.log(arr);
+// arr[0].textContent = "hi all"
+// var x = document.querySelector(".Heading1")
+// x.style.fontSize = "100px"
+// function addSum(){
+//     var message = "Hi how are you";
+//     return message;
+// }
+// console.log(addSum());
+// Events : Action
+// function showName(){
+//     var x = document.getElementById("heading")
+//     x.textContent = "How are you"
+// }
+// function changeColor1(){
+//     let x = document.getElementById("honda1")
+//     x.style.color = "red"
+// }
+
+// function changeColor2(){
+//     let y =document.getElementById("polo1")
+//     y.style.color = "orange"
+// }
+
+// function changeBackground(){
+//     let z = document.getElementById("polo1")
+//     z.style.backgroundColor = "green"
+// }
+// function changeAnother(){
+//     let d = document.getElementById("polo1")
+//     d.style.backgroundColor = "red"
+// }
+// voting eligibility 
+
+// function checkAge(){
+//     const result = age.value;
+//     if(result >= 18){
+//         answer.innerHTML = "Eligible for Vote"
+//         answer.style.color = "lightgreen"
+//     }else{
+//        answer.innerHTML = "Not Eligible for Vote"
+//        answer.style.color = "red"
+//     }
+//     age.value = ""
+//     // alert("button clicked")
+// }]]]
+// function displayTime(){
+
+// const currentTIme = new Date()
+// let hours = currentTIme.getHours()
+// let minutes = currentTIme.getMinutes()
+// let seconds = currentTIme.getSeconds()
+// let x = document.getElementById("clock")
+// x.innerHTML = ` ${hours} : ${minutes} : ${seconds} ${hours<12?"AM":"PM"}`
+// }
+
+// setInterval(() => {
+//    displayTime() 
+// }, 1000);
+
+// setTimeout(()=>{
+//     displayTime()
+// },1000)
+
+// function getData(){
+//     if(data.value){
+//     var text = data.value;
+//     data.value = ""
+//     let x = document.getElementById("item")
+//     x.innerHTML += `<li>${text}</li>`
+//     } 
+//     else{
+//         alert("Please enter anything in the sheet")
+//     }
+// }
+// getData();
+// calculator logic]
+// let result = ""
+// function appendNumber(num){
+//     display.value = num
+// }
+// function setOperator(op){
+//     operator = op;
+//    firstOperand = display.value;
+//     display.value = "";
+// }
+// function calculateResult(){
+//    secondOperand = display.value
+//   switch(operator){
+//     case "+" :
+//       result = parseInt(firstOperand)
+
+//   }
+// }]
+// local storage
+// var name = "Sulthan";
+// localStorage.setItem("firstName",name);
+// var result = localStorage.getItem("firstName")
+// console.log("result",result);
+
+// function add(){
+//     const name = "Udaif"
+//     localStorage.setItem("firstName", name)
+//     var result = localStorage.getItem("firstName")
+//     console.log(result)
+// }
+// add()   ]
+// 
+// const input = document.querySelector("input")
+// h2 = document.querySelector("h2")
+
+// input.addEventListener("keyup", display);
+
+// function display(){
+//     h2.innerHTML = input.value
+// }
+// local storage only  string not number
+// let myObj = {
+//     name:"Udaif",
+//     age: 56
+// } 
+
+// let obj = JSON.stringify(myObj)
+// console.log(obj);
+
+// localStorage.setItem("myObj",obj)
+// ]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
 
 
 

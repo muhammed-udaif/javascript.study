@@ -4,97 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning of js</title>
-  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body>
-    <h1 class="header">Hi  udaif </h1>
-    <h2 class="header-2">hello welcome buddy</h2>
-    <!-- <input type="text" id="input-el"> -->
-     <!-- <p id="open-box"></p> -->
-    <!-- <ul id="unorder-list"></ul>
-    <button id="input-btn">SAVE INPUT</button> -->
-    <!-- <h1>Blackjack</h1>
-   <p id="message-el">Want to play a round?</p>
-   <p id="cards-el">Cards:</p>
-   <p id="sum-el">Sum:</p>
-   <button id="btn" onclick="startGame()">Start Game</button>
-   <button id="btn" class="margin" onclick="newCard()">New Card</button>
-   <p id="player-el"></p>
-   <style>
-    body{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-weight: bold;
-        color: white;
-        text-align: center;
-        background-color: cadetblue;
-    }
-    h1{
-        color: goldenrod;
-    }
-    #message-el{
-        font-style: italic;
-    }
-    #btn{
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <h2 class="mt-5 text-primary text-center">Voting Eligibility</h2>
+                <form class="border border-primary p-3 rounded mt-3">
+                    <div class="mb-3">
+                        <label for="age" class="form-label" >Age</label>
+                        <input type="text" class="form-control" id="age" placeholder="Enter your Age">
+                    </div>
+                      <button type="button" class="btn btn-primay" onclick="checkAge()" >Submit</button>
+                </form>
+                <h2 id="answer"></h2>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div> -->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="dclock" id="clock">
+                   
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>]]]]
+    </div> -->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-6">
+                <h3 class="text-center text-primary mt-5">TO DO List</h3>
+                <form action="" class="d-flex mt-5">
+                    <input type="text" placeholder="Enter your Task" class="form-control" id="data">
+                    <button class="btn btn-success ms-3" type="button" onclick="getData()">Add</button>
+                </form>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 border border-3 border-primary rounded mt-2">
+            <h3 class="text-warning text-center mt-2">Lists</h3>
+            <ol id="item">
+
+            </ol>
+        </div>
+    </div> -->
+    <!-- calculator -->
+     <!-- <div class="calculator">
+        <input type="text" id="display" readonly>
+        <button onclick="appendNumber('7')">7</button>
+        <button onclick="appendNumber('8')">8</button>
+        <button onclick="appendNumber('9')">9</button>
+        <button class="operator" onclick="setOperator('+')">+</button>
+        <br>
+        <button onclick="appendNumber('4')">4</button>
+        <button onclick="appendNumber('5')">5</button>
+        <button onclick="appendNumber('6')">6</button>
+        <button class="operator" onclick="setOperator('-')">-</button>
+        <br>
+        <button onclick="appendNumber('1')">1</button>
+        <button onclick="appendNumber('2')">2</button>
+        <button onclick="appendNumber('3')">3</button>
+        <button class="operator" onclick="setOperator('*')">*</button>
+        <br>
+        <button onclick="appendNumber('0')">0</button>
+        <button class="equal" onclick="calculateResult()">=</button>
+       <button class="operator" onclick="setOperator('/')">/</button>
+       <button onclick="clearDisplay()">C</button>
+     </div> -->
+     <!-- <button onclick="add()">Add to Local Storage</button> -->
+      <!-- <input type="text">
+      <h2></h2> -->
+      <!-- <h2 id="title">object in local storage</h2> -->
+
+    <style>
+       /* .dclock{
+        color:white;
+        font-size: 80px;
         display: flex;
         justify-content: center;
-        position: relative;
-        left: 426px;
-        padding: 5px 30px;
-        width: 150px;
-        color:#016f32;
-        background-color:goldenrod;
-        border-radius: 10px;
-        border: none;
-    }
-    .margin{
-        margin-top: 10px;
-    }
-   </style> -->
-   <!-- <style>
-    #orange-img{
-        border-radius: 12px;
-        width: 250px;
-        background-color: orange;
-        height: 50px;
-        left: 50%;
-        position: absolute;
-    }
-    #apple-img{
-        border-radius: 12px;
-        width: 250px;
-        background-color: red;
-        height: 50px;
-        left: 50%;
-        position: absolute;
-        top: 15%;
-    }
-   </style> -->
-   <style>
-    body{
-        margin: 0;
-        padding: 10px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    input {
-       padding: 10px;
-       width: 100%;
-       border: 1px solid #5f9341;
-       box-sizing: border-box;
-       margin-bottom: 4px;
-    }
-    button{
-        background: #5f9341;
-        color: white;
-        padding: 10px 20px;
-        border-radius: 2px;
-        border: none;
-        font-weight: bold;
-    }
-   </style>
+        align-items: center;
+        height: 600px;
+        width:600px;
+       }
+       body{
+        background-color: black;
+       } */
+       /* .calculator{
+        max-width: 300px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px; */
+        /* background-color: #f5f5f5;
+       }
+       input{
+        width: 100%;
+        height: 40px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        text-align: right;
+        border: 1px solid #ccc;
+        padding: 5px;
+       }
+       button{
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+       }
+       button.operator{
+          background-color: #ff8c00;
+       }
+       button.equal{
+        background-color: #4CAF50;
+       } */
+    </style>
      <script src="index.js"></script>
 </body>
 </html>
 
 
-<!-- ]]]] -->
-
+<!-- ]]]]]]]]]]]]]]]-->
